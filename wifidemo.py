@@ -1,6 +1,7 @@
 import requests
 url = "https://raw.githubusercontent.com/marigolds6/pythonintermediate/master/wifisample.js"
 r = requests.get(url)
+# We should ask forgiveness instead of permission
 if r.status_code == 200:
     nodes = r.json()
     for node in nodes:
